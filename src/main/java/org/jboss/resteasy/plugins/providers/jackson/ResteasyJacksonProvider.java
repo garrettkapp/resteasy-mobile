@@ -1,6 +1,5 @@
 package org.jboss.resteasy.plugins.providers.jackson;
 
-import org.codehaus.jackson.jaxrs.JacksonJsonProvider;
 import org.jboss.resteasy.annotations.providers.NoJackson;
 import org.jboss.resteasy.util.FindAnnotation;
 
@@ -10,6 +9,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.ext.Provider;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
+
+import com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider;
 
 /**
  * Only different from Jackson one is *+json in @Produces/@Consumes

@@ -19,7 +19,7 @@
   <artifactId>resteasy-mobile</artifactId>
   <packaging>jar</packaging>
 
-  <version>1.0.0</version>
+  <version>1.0.0-EK3</version>
 
   <parent>
     <groupId>org.jboss</groupId>
@@ -30,15 +30,15 @@
   <!-- Properties -->
   <properties>
     <version.org.apache.httpcomponents>4.0.3</version.org.apache.httpcomponents>
-    <version.org.codehaus.jackson>1.6.3</version.org.codehaus.jackson>
+    <version.org.fasterxml.jackson>2.6.6</version.org.fasterxml.jackson>
     <version.org.jboss.resteasy.jaxrs>2.2.1.GA</version.org.jboss.resteasy.jaxrs>
   </properties>
   
   <!-- Source Control -->
   <scm>
-    <connection>scm:git:git://github.com/tdiesler/resteasy-mobile.git</connection>
-    <developerConnection>scm:git:git@github.com:tdiesler/resteasy-mobile.git</developerConnection>
-    <url>http://github.com/tdiesler/resteasy-mobile</url>
+    <connection>scm:git:git://github.com/garrettkapp/resteasy-mobile.git</connection>
+    <developerConnection>scm:git:git@github.com:garrettkapp/resteasy-mobile.git</developerConnection>
+    <url>http://github.com/garrettkapp/resteasy-mobile</url>
   </scm>
   
   <!-- Dependencies -->
@@ -49,9 +49,9 @@
       <version>${version.org.apache.httpcomponents}</version>
     </dependency>
     <dependency>
-      <groupId>org.codehaus.jackson</groupId>
-      <artifactId>jackson-jaxrs</artifactId>
-      <version>${version.org.codehaus.jackson}</version>
+      <groupId>com.fasterxml.jackson.jaxrs</groupId>
+      <artifactId>jackson-jaxrs-json-provider</artifactId>
+      <version>${version.org.fasterxml.jackson}</version>
     </dependency>
     <dependency>
       <groupId>org.jboss.resteasy</groupId>
